@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+/*
+ * Chat entries fade in one after another. The delay comes from --reveal-delay,
+ * and visibility keeps not-yet-shown buttons from catching clicks.
+ */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+}
+
+.reveal {
+  animation: reveal 320ms ease-out both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none;
+  }
+}

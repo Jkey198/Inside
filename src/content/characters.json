@@ -1,0 +1,26 @@
+[
+  {
+    "id": "alexey",
+    "name": "Алексей Морозов",
+    "role": "Engineering Manager — твой руководитель",
+    "color": "#4f46e5"
+  },
+  {
+    "id": "maria",
+    "name": "Мария Волкова",
+    "role": "Senior Backend Developer — наставник",
+    "color": "#db2777"
+  },
+  {
+    "id": "dima",
+    "name": "Дима Ким",
+    "role": "Middle Backend Developer — бадди",
+    "color": "#0891b2"
+  },
+  {
+    "id": "igor",
+    "name": "Игорь Лебедев",
+    "role": "Product Manager",
+    "color": "#d97706"
+  }
+]
